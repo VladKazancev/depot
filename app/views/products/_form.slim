@@ -1,0 +1,22 @@
+= form_with(model: product) do |form|
+  - if @product.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@product.errors.count, "error")}" \
+        'prohibited this person from being saved:'
+      ul
+      - @product.errors.full_messages.each do |message|
+        li = message
+  .field
+    = form.label :title
+    = form.text_field :title
+  .field
+    = form.label :description
+    = form.text_field :description
+  .field
+    = form.label :image_url
+    = form.text_field :image_url
+  .field
+    = form.label :price
+    = form.text_field :price
+  .actions
+    = form.submit
