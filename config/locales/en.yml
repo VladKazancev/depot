@@ -30,9 +30,19 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  cite_title: Depot
+  nav_bar:
+    home: Home
+    questions: Questions
+    news: News
+    contact: Contact
   form_confirm_message: Are you sure?
+  page_title: Depot online store
   errors:
     form_error_msg: "prohibited this person from being saved:"
   products:
     title: Listing products
     new_product_title: New product
+    editing_products: Editing products
+  store:
+    title: Your Pragmatic Catalog

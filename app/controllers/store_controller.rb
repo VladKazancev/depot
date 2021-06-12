@@ -1,3 +1,5 @@
 class StoreController < ApplicationController
-  def index; end
+  def index
+    @products = Product.order :title
+  end
 end
