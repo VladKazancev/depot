@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'store#index', as: 'store'
-  resources :products
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  scope '(:locale)', locale: /en/ do
+    root 'store#index', as: 'store'
+    resources :products
+  end
 end

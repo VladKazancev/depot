@@ -1,15 +1,15 @@
 p.notice = notice
 p
-  strong Title:
+  strong = "#{Product.human_attribute_name(:title)}: "
   = @product.title
 p
-  strong Description:
+  strong = "#{Product.human_attribute_name(:description)}: "
   = @product.description
 p
-  strong Image url:
+  strong = "#{Product.human_attribute_name(:image_url)}: "
   = @product.image_url
 p
-  strong Price:
+  strong = "#{Product.human_attribute_name(:price)}: "
   = @product.price
 
 = link_to 'Edit', edit_product_path(@product)

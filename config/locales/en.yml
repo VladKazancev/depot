@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  form_confirm_message: Are you sure?
+  errors:
+    form_error_msg: "prohibited this person from being saved:"
+  products:
+    title: Listing products
+    new_product_title: New product
