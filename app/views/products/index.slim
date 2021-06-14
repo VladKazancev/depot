@@ -9,12 +9,12 @@ table
           dd = truncate(strip_tags(product.description),
                 length: 80)
       td.list_actions
-        = link_to 'Show', product
+        = link_to t('products.show_label'), product
         br
-        = link_to 'Edit', edit_product_path(product)
+        = link_to t('products.edit_label'), edit_product_path(product)
         br
-        = link_to 'Destroy', product, method: :delete,
+        = link_to t('products.destroy_label'), product, method: :delete,
             data: { confirm: t(:form_confirm_message) }
         br
 br
-= link_to 'New product', new_product_path
+= link_to t('products.new_product_title'), new_product_path

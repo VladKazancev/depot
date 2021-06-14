@@ -4,6 +4,6 @@ class Product < ApplicationRecord
   validates :title, uniqueness: true
   validates :image_url, allow_blank: true, format: {
     with: /\.(gif|jpg|png)\Z/i,
-    message: 'URL должен указывать на изображение формата GIF, JPG или PNG.'
+    message: I18n.t('products.errors.image_validation_error')
   }
 end

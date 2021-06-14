@@ -2,7 +2,7 @@
   - if @product.errors.any?
     #error_explanation
       h2 = "#{pluralize(@product.errors.count, 'error')} " + \
-        t('errors.form_error_msg')
+        t('products.errors.form_error_msg')
       ul
       - @product.errors.full_messages.each do |message|
         li = message

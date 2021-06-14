@@ -12,5 +12,6 @@ p
   strong = "#{Product.human_attribute_name(:price)}: "
   = @product.price
 
-= link_to 'Edit', edit_product_path(@product)
-= link_to 'Back', products_path
+=> link_to t('products.edit_label'), edit_product_path(@product)
+'|
+=< link_to t('products.back_label'), products_path
