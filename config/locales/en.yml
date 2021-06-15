@@ -30,4 +30,24 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  cite_title: Depot
+  nav_bar:
+    home: Home
+    questions: Questions
+    news: News
+    contact: Contact
+  form_confirm_message: Are you sure?
+  page_title: Depot online store
+  products:
+    title: Listing products
+    show_label: Show
+    edit_label: Edit
+    destroy_label: Destroy
+    back_label: Back
+    new_product_title: New product
+    editing_products: Editing products
+    errors:
+      form_error_msg: "prohibited this product from being saved:"
+      image_validation_error: must be a URL for GIF, JPG or PNG image.
+  store:
+    title: Your Pragmatic Catalog

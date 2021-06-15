@@ -1,0 +1,17 @@
+p.notice = notice
+p
+  strong = "#{Product.human_attribute_name(:title)}: "
+  = @product.title
+p
+  strong = "#{Product.human_attribute_name(:description)}: "
+  = @product.description
+p
+  strong = "#{Product.human_attribute_name(:image_url)}: "
+  = @product.image_url
+p
+  strong = "#{Product.human_attribute_name(:price)}: "
+  = @product.price
+
+=> link_to t('products.edit_label'), edit_product_path(@product)
+'|
+=< link_to t('products.back_label'), products_path

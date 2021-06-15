@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title = t :cite_title
+    meta name="viewport" content="width=device-width,initial-scale=1"
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all',
+      'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  body class = controller.controller_name
+    #banner
+      = image_tag('logo.png')
+      = @page_title || t(:page_title)
+    #columns
+      #side
+        ul
+          li
+            a href="" = t('nav_bar.home')
+          li
+            a href="" = t('nav_bar.questions')
+          li
+            a href="" = t('nav_bar.news')
+          li
+            a href="" = t('nav_bar.contact')
+      #main = yield
